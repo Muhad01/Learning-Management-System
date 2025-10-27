@@ -13,7 +13,7 @@ export default function StudentDashboard() {
           <SidebarTrigger />
           <div>
             <h2 className="text-3xl font-bold tracking-tight">Welcome back, Alex!</h2>
-            <p className="text-muted-foreground">Here's what's happening with your courses today.</p>
+            <p className="text-muted-foreground">Here&apos;s what&apos;s happening with your courses today.</p>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function StudentDashboard() {
         <Card className="col-span-3">
           <CardHeader>
             <CardTitle>Upcoming Deadlines</CardTitle>
-            <CardDescription>Don't miss these important dates</CardDescription>
+            <CardDescription>Don&apos;t miss these important dates</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex items-center space-x-4">

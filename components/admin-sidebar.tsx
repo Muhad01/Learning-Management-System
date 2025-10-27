@@ -26,6 +26,7 @@ import {
   User,
 } from "lucide-react"
 import Link from "next/link"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const menuItems = [
   {
@@ -87,14 +88,17 @@ export function AdminSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="border-b">
-        <div className="flex items-center space-x-2 px-2 py-2">
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-            <BookOpen className="w-5 h-5 text-white" />
+        <div className="flex items-center justify-between px-2 py-2">
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <BookOpen className="w-5 h-5 text-white" />
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold">EduFlow</h2>
+              <p className="text-xs text-muted-foreground">Admin Panel</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-lg font-semibold">EduFlow</h2>
-            <p className="text-xs text-muted-foreground">Admin Panel</p>
-          </div>
+          <ThemeToggle />
         </div>
       </SidebarHeader>
 

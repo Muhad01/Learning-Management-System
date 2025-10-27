@@ -144,7 +144,7 @@ export default function StudentMaterialsPage() {
       <Card>
         <CardHeader>
           <CardTitle>Recent Downloads</CardTitle>
-          <CardDescription>Files you've downloaded recently</CardDescription>
+          <CardDescription>Files you&apos;ve downloaded recently</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-3">

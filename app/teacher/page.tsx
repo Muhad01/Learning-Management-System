@@ -72,7 +72,7 @@ export default function TeacherDashboard() {
         <Card className="col-span-4">
           <CardHeader>
             <CardTitle>My Courses</CardTitle>
-            <CardDescription>Courses you're currently teaching</CardDescription>
+            <CardDescription>Courses you&apos;re currently teaching</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             {[

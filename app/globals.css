@@ -118,6 +118,32 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .bg-white {
+    @apply dark:bg-gray-900;
+  }
+  
+  .bg-gray-50 {
+    @apply dark:bg-gray-800;
+  }
+  
+  .text-gray-600 {
+    @apply dark:text-gray-300;
+  }
+  
+  .border-b {
+    @apply dark:border-gray-700;
+  }
+  
+  .shadow-lg {
+    @apply dark:shadow-gray-900/50;
+  }
+  
+  .hover\:shadow-xl:hover {
+    @apply dark:hover:shadow-gray-900/70;
   }
 }

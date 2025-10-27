@@ -67,9 +67,9 @@ export default function AdminDashboard() {
         </Card>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
         {/* Recent Activities */}
-        <Card className="col-span-4">
+        <Card>
           <CardHeader>
             <CardTitle>Recent Activities</CardTitle>
             <CardDescription>Latest system activities and updates</CardDescription>
@@ -78,7 +78,7 @@ export default function AdminDashboard() {
             <div className="flex items-center space-x-4">
               <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
               <div className="flex-1">
-                <p className="text-sm font-medium">New course "Advanced Mathematics" created</p>
+                <p className="text-sm font-medium">New course &quot;Advanced Mathematics&quot; created</p>
                 <p className="text-xs text-muted-foreground">2 hours ago</p>
               </div>
             </div>
@@ -106,31 +106,7 @@ export default function AdminDashboard() {
           </CardContent>
         </Card>
 
-        {/* Quick Actions */}
-        <Card className="col-span-3">
-          <CardHeader>
-            <CardTitle>Quick Actions</CardTitle>
-            <CardDescription>Common administrative tasks</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <Button className="w-full justify-start bg-transparent" variant="outline">
-              <Users className="mr-2 h-4 w-4" />
-              Add New Student
-            </Button>
-            <Button className="w-full justify-start bg-transparent" variant="outline">
-              <GraduationCap className="mr-2 h-4 w-4" />
-              Add New Teacher
-            </Button>
-            <Button className="w-full justify-start bg-transparent" variant="outline">
-              <BookOpen className="mr-2 h-4 w-4" />
-              Create Course
-            </Button>
-            <Button className="w-full justify-start bg-transparent" variant="outline">
-              <Calendar className="mr-2 h-4 w-4" />
-              Schedule Classes
-            </Button>
-          </CardContent>
-        </Card>
+
       </div>
 
       {/* Recent Courses */}

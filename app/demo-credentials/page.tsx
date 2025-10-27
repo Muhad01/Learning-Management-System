@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { BookOpen, ArrowLeft, Copy, Users, GraduationCap, Shield } from "lucide-react"
 import Link from "next/link"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function DemoCredentialsPage() {
   const credentials = [
@@ -47,14 +48,17 @@ export default function DemoCredentialsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-4">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <Link href="/" className="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-800 mb-6">
-            <ArrowLeft className="w-4 h-4" />
-            <span>Back to Home</span>
-          </Link>
+          <div className="flex items-center justify-between mb-6">
+            <Link href="/" className="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100">
+              <ArrowLeft className="w-4 h-4" />
+              <span>Back to Home</span>
+            </Link>
+            <ThemeToggle />
+          </div>
 
           <div className="flex items-center justify-center space-x-2 mb-4">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
@@ -66,7 +70,7 @@ export default function DemoCredentialsPage() {
           </div>
 
           <h1 className="text-4xl font-bold mb-4">Demo Credentials</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Use these temporary credentials to explore different user roles and features in the EduFlow LMS system.
           </p>
         </div>
@@ -74,7 +78,7 @@ export default function DemoCredentialsPage() {
         {/* Credentials Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           {credentials.map((cred, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:border-gray-700">
               <CardHeader className="text-center pb-4">
                 <div className={`w-16 h-16 ${cred.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
                   <cred.icon className="w-8 h-8 text-white" />
