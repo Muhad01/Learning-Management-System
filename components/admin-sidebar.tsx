@@ -19,9 +19,6 @@ import {
   Calendar,
   Settings,
   BarChart3,
-  FileText,
-  UserPlus,
-  BookPlus,
   LogOut,
   User,
 } from "lucide-react"
@@ -61,29 +58,6 @@ const menuItems = [
   },
 ]
 
-const quickActions = [
-  {
-    title: "Add Student",
-    url: "/admin/students/add",
-    icon: UserPlus,
-  },
-  {
-    title: "Add Teacher",
-    url: "/admin/teachers/add",
-    icon: GraduationCap,
-  },
-  {
-    title: "Create Course",
-    url: "/admin/courses/create",
-    icon: BookPlus,
-  },
-  {
-    title: "Course Outline",
-    url: "/admin/courses/outline",
-    icon: FileText,
-  },
-]
-
 export function AdminSidebar() {
   return (
     <Sidebar>
@@ -108,24 +82,6 @@ export function AdminSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <Link href={item.url}>
-                      <item.icon />
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-
-        <SidebarGroup>
-          <SidebarGroupLabel>Quick Actions</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {quickActions.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <Link href={item.url}>
