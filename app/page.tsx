@@ -6,15 +6,15 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Header */}
       <header className="border-b bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-brand rounded-lg flex items-center justify-center">
               <BookOpen className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-gradient-brand">
               EduFlow
             </span>
           </div>
@@ -24,7 +24,7 @@ export default function HomePage() {
               <Button variant="ghost">Sign In</Button>
             </Link>
             <Link href="/register">
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              <Button className="bg-gradient-brand bg-gradient-brand-hover text-white hover:text-white border-0">
                 Get Started
               </Button>
             </Link>
@@ -39,7 +39,7 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gradient-brand">
               Transform Education with EduFlow
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
@@ -50,7 +50,7 @@ export default function HomePage() {
               <Link href="/register">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-3"
+                  className="bg-gradient-brand bg-gradient-brand-hover text-white hover:text-white border-0 text-lg px-8 py-3"
                 >
                   Start Free Trial
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -161,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* AI Feature Highlight */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+      <section className="py-20 px-4 bg-gradient-brand text-white">
         <div className="container mx-auto text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold mb-6">AI-Powered Learning Assistant</h2>
@@ -195,7 +195,7 @@ export default function HomePage() {
           <Link href="/register">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-12 py-4"
+              className="bg-white text-brand hover:bg-brand-muted border-2 border-current text-lg px-12 py-4"
             >
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -208,7 +208,7 @@ export default function HomePage() {
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-brand rounded-lg flex items-center justify-center">
               <BookOpen className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold">EduFlow</span>

@@ -64,7 +64,7 @@ export function AdminSidebar() {
       <SidebarHeader className="border-b">
         <div className="flex items-center justify-between px-2 py-2">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-brand rounded-lg flex items-center justify-center">
               <BookOpen className="w-5 h-5 text-white" />
             </div>
             <div>

@@ -14,8 +14,9 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Separator } from "@/components/ui/separator"
-import { Settings, Save, Bell, Shield, Mail, Globe, Database, User } from "lucide-react"
+import { Settings, Save, Bell, Shield, Mail, Globe, Database, User, Palette } from "lucide-react"
 import { SidebarTrigger } from "@/components/ui/sidebar"
+import { ColorSettings } from "@/components/color-settings"
 import { useState } from "react"
 
 export default function AdminSettingsPage() {
@@ -77,6 +78,20 @@ export default function AdminSettingsPage() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* Appearance / Brand color */}
+        <Card>
+          <CardHeader>
+            <div className="flex items-center space-x-2">
+              <Palette className="h-5 w-5" />
+              <CardTitle>Appearance</CardTitle>
+            </div>
+            <CardDescription>Brand color for buttons, links, and accents</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ColorSettings />
+          </CardContent>
+        </Card>
+
         {/* General Settings */}
         <Card className="lg:col-span-2">
           <CardHeader>

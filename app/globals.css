@@ -37,6 +37,60 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Brand colors (default: green) - overridden by data-brand */
+  --brand: #16a34a;
+  --brand-secondary: #15803d;
+  --brand-hover: #15803d;
+  --brand-muted: #dcfce7;
+  --brand-muted-foreground: #166534;
+}
+
+[data-brand="blue"] {
+  --brand: #2563eb;
+  --brand-secondary: #1d4ed8;
+  --brand-hover: #1d4ed8;
+  --brand-muted: #dbeafe;
+  --brand-muted-foreground: #1e40af;
+}
+
+[data-brand="purple"] {
+  --brand: #9333ea;
+  --brand-secondary: #7e22ce;
+  --brand-hover: #7e22ce;
+  --brand-muted: #f3e8ff;
+  --brand-muted-foreground: #6b21a8;
+}
+
+[data-brand="red"] {
+  --brand: #dc2626;
+  --brand-secondary: #b91c1c;
+  --brand-hover: #b91c1c;
+  --brand-muted: #fee2e2;
+  --brand-muted-foreground: #991b1b;
+}
+
+[data-brand="orange"] {
+  --brand: #ea580c;
+  --brand-secondary: #c2410c;
+  --brand-hover: #c2410c;
+  --brand-muted: #ffedd5;
+  --brand-muted-foreground: #9a3412;
+}
+
+[data-brand="teal"] {
+  --brand: #0d9488;
+  --brand-secondary: #0f766e;
+  --brand-hover: #0f766e;
+  --brand-muted: #ccfbf1;
+  --brand-muted-foreground: #115e59;
+}
+
+[data-brand="custom"] {
+  --brand: var(--brand-custom);
+  --brand-secondary: var(--brand-custom-secondary);
+  --brand-hover: var(--brand-custom-hover);
+  --brand-muted: var(--brand-custom-muted);
+  --brand-muted-foreground: var(--brand-custom-muted-foreground);
 }
 
 .dark {
@@ -111,6 +165,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-brand: var(--brand);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-muted-foreground: var(--brand-muted-foreground);
 }
 
 @layer base {
@@ -145,5 +203,42 @@
   
   .hover\:shadow-xl:hover {
     @apply dark:hover:shadow-gray-900/70;
+  }
+
+  /* Brand color utilities - use CSS variables so user theme applies */
+  .bg-brand {
+    background-color: var(--brand);
+  }
+  .text-brand {
+    color: var(--brand);
+  }
+  .bg-brand-muted {
+    background-color: var(--brand-muted);
+  }
+  .text-brand-muted-foreground {
+    color: var(--brand-muted-foreground);
+  }
+  .bg-gradient-brand {
+    background: linear-gradient(to right, var(--brand), var(--brand-secondary));
+  }
+  .bg-gradient-brand-hover:hover {
+    background: linear-gradient(to right, var(--brand-hover), var(--brand-secondary));
+  }
+  .bg-gradient-brand-bg {
+    background: linear-gradient(to bottom right, var(--brand-muted), transparent 50%, var(--brand-muted) / 0.3);
+  }
+  .from-brand {
+    --tw-gradient-from: var(--brand);
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  .to-brand-secondary {
+    --tw-gradient-to: var(--brand-secondary);
+  }
+  .text-gradient-brand {
+    background: linear-gradient(to right, var(--brand), var(--brand-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

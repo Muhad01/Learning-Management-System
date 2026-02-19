@@ -160,8 +160,8 @@ export default function AdminTeachersPage() {
               <Card key={index} className="p-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                      <span className="text-lg font-semibold text-purple-600">
+                    <div className="w-12 h-12 bg-brand-muted rounded-full flex items-center justify-center">
+                      <span className="text-lg font-semibold text-brand-muted-foreground">
                         {teacher.name
                           .split(" ")
                           .map((n) => n[0])

@@ -140,7 +140,7 @@ export default function TeacherSchedulePage() {
             {todaysClasses.map((c) => (
               <div key={c.id} className="p-4 border rounded-lg flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-brand rounded-lg flex items-center justify-center">
                     <BookOpenIcon />
                   </div>
                   <div>

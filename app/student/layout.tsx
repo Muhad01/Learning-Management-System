@@ -12,8 +12,13 @@ export default function StudentLayout({
     <SidebarProvider>
       <StudentSidebar />
       <SidebarInset>
-        {children}
-        <AIAssistant />
+        <div
+          className="flex min-h-0 flex-1 flex-col overflow-auto"
+          data-gesture-scroll
+        >
+          {children}
+          <AIAssistant />
+        </div>
       </SidebarInset>
     </SidebarProvider>
   )

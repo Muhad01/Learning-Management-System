@@ -97,7 +97,7 @@ export default function AdminDashboard() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-brand rounded-full"></div>
               <div className="flex-1">
                 <p className="text-sm font-medium">System maintenance completed</p>
                 <p className="text-xs text-muted-foreground">1 day ago</p>
@@ -125,7 +125,7 @@ export default function AdminDashboard() {
             ].map((course, index) => (
               <div key={index} className="flex items-center justify-between p-4 border rounded-lg">
                 <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-brand rounded-lg flex items-center justify-center">
                     <BookOpen className="w-5 h-5 text-white" />
                   </div>
                   <div>

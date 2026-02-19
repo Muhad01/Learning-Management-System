@@ -56,7 +56,7 @@ export default function StudentGradesPage() {
                 <p className="text-sm font-medium text-muted-foreground">Class Rank</p>
                 <p className="text-3xl font-bold">15/247</p>
               </div>
-              <Award className="h-8 w-8 text-purple-600" />
+              <Award className="h-8 w-8 text-brand" />
             </div>
           </CardContent>
         </Card>

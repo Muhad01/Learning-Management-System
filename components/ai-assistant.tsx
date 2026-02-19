@@ -185,7 +185,7 @@ export default function AIAssistant() {
       {/* Floating Action Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 z-40"
+        className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg bg-gradient-brand bg-gradient-brand-hover z-40"
         size="icon"
       >
         <Bot className="w-6 h-6" />

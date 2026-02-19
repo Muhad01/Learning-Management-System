@@ -161,9 +161,9 @@ export default function AdminSchedulePage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Rooms Used</p>
-                <p className="text-2xl font-bold text-purple-600">24</p>
+                <p className="text-2xl font-bold text-brand">24</p>
               </div>
-              <MapPin className="h-8 w-8 text-purple-600" />
+              <MapPin className="h-8 w-8 text-brand" />
             </div>
           </CardContent>
         </Card>

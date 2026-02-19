@@ -48,7 +48,7 @@ export default function DemoCredentialsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-4">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-8">
@@ -61,10 +61,10 @@ export default function DemoCredentialsPage() {
           </div>
 
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-brand rounded-lg flex items-center justify-center">
               <BookOpen className="w-7 h-7 text-white" />
             </div>
-            <span className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-3xl font-bold text-gradient-brand">
               EduFlow
             </span>
           </div>
@@ -127,7 +127,7 @@ export default function DemoCredentialsPage() {
 
                 {/* Login Button */}
                 <Link href="/login">
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                  <Button className="w-full bg-gradient-brand bg-gradient-brand-hover text-white hover:text-white border-0">
                     Login as {cred.role}
                   </Button>
                 </Link>
@@ -192,7 +192,7 @@ export default function DemoCredentialsPage() {
               <Link href="/login">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  className="bg-gradient-brand bg-gradient-brand-hover text-white hover:text-white border-0"
                 >
                   Start Testing Now
                 </Button>

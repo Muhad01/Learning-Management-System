@@ -30,7 +30,7 @@ export default function StudentMaterialsPage() {
       case "image":
         return "bg-green-100 text-green-600"
       case "audio":
-        return "bg-purple-100 text-purple-600"
+        return "bg-brand-muted text-brand-muted-foreground"
       default:
         return "bg-gray-100 text-gray-600"
     }

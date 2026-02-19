@@ -17,6 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Save, Bell, Shield, User, Globe, Mail, Lock } from "lucide-react"
+import { ColorSettings } from "@/components/color-settings"
 
 export default function StudentSettingsPage() {
   const [profile, setProfile] = useState({
@@ -195,6 +196,10 @@ export default function StudentSettingsPage() {
                 </SelectContent>
               </Select>
             </div>
+
+            <Separator />
+
+            <ColorSettings />
 
             <Separator />
 

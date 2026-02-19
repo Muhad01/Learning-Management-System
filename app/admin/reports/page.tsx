@@ -97,7 +97,7 @@ export default function AdminReportsPage() {
   const reportStats = [
     { label: "Total Reports", value: "24", icon: FileText, color: "text-blue-600" },
     { label: "Generated This Month", value: "12", icon: BarChart3, color: "text-green-600" },
-    { label: "Active Reports", value: "18", icon: TrendingUp, color: "text-purple-600" },
+    { label: "Active Reports", value: "18", icon: TrendingUp, color: "text-brand" },
     { label: "Records Processed", value: "8,547", icon: Clock, color: "text-orange-600" },
   ]
 
@@ -176,7 +176,7 @@ export default function AdminReportsPage() {
         <Card className="cursor-pointer hover:bg-accent transition-colors">
           <CardHeader className="pb-3">
             <div className="flex items-center space-x-2">
-              <GraduationCap className="h-5 w-5 text-purple-600" />
+              <GraduationCap className="h-5 w-5 text-brand" />
               <CardTitle className="text-base">Teacher Report</CardTitle>
             </div>
           </CardHeader>
@@ -225,8 +225,8 @@ export default function AdminReportsPage() {
                     icon: "text-green-600 dark:text-green-400",
                   },
                   purple: {
-                    bg: "bg-purple-100 dark:bg-purple-900",
-                    icon: "text-purple-600 dark:text-purple-400",
+                    bg: "bg-brand-muted dark:bg-brand-muted",
+                    icon: "text-brand",
                   },
                   orange: {
                     bg: "bg-orange-100 dark:bg-orange-900",
